@@ -32,15 +32,15 @@
           <h2 class="visually-hidden">Имя, вес и возраст Вашего любимца</h2>
           <fieldset class="identity_wrapper">
             <ul class="identity__list">
-              <li class="identity__item">
+              <li class="identity__item identity__item--name">
                 <label for="name">Имя:*</label>
                 <input class="identity__name" type="text" name="cat-name" id="name" placeholder="БАРСИК">
               </li>
-              <li class="identity__item">
+              <li class="identity__item identity__item--weight">
                 <label for="weight">Вес (кг):*</label>
                 <input class="identity__weight" type="text" name="cat-weight" id="weight" placeholder="7">
               </li>
-              <li class="identity__item">
+              <li class="identity__item identity__item--age">
                 <label for="age">Возраст (Лет):*</label>
                 <input class="identity__age" type="text" name="cat-age" id="age" placeholder="7">
               </li>
@@ -52,15 +52,15 @@
           <h2 class="visually-hidden">Выбор типа программы</h2>
           <fieldset class="choice__wrapper">
             <ul class="choice__list">
-              <li class="choice__item">
+              <li class="choice__item choice__item--slim">
                 <input class="choice__slimming" type="radio" name="slim-cat" id="slim" value="Похудение" checked>
                 <label for="slim">Похудение</label>
               </li>
-              <li class="choice__item">
+              <li class="choice__item choice__item--plump">
                 <input class="choice__plump" type="radio" name="plump-cat" id="plump" value="Набор массы">
                 <label for="slim">Набор массы</label>
               </li>
-              <li class="choice__item">
+              <li class="choice__item choice__item--help">
                 <input class="choice__help" type="radio" name="need-help" id="help" value="Не знаю (Нужен ваш совет)">
                 <label for="slim">Не знаю (Нужен ваш совет)</label>
               </li>
@@ -73,11 +73,11 @@
           <fieldset class="callback__wrapper">
             <legend class="callback__title">Контактные данные (владельца кота)</legend>
             <ul class="callback__list">
-              <li class="callback__item">
+              <li class="callback__item callback__item--email">
                 <label for="email">E-mail:* </label>
                 <input class="callback__email" type="text" id="email" name="owner-email" placeholder="kuklachev@gmail.com">
               </li>
-              <li class="callback__item">
+              <li class="callback__item callback__item--tel">
                 <label for="tel">Телефон:* </label>
                 <input class="callback__tel" type="text" id="tel" name="owner-tel" placeholder="8 (960) 900-60-90">
               </li>
@@ -98,19 +98,19 @@
             <fieldset class="extra__wrapper">
               <legend class="extra__title">Дополнительно</legend>
               <ul class="extra__list">
-                <li class="extra__item">
-                  <input class="exta__sweet" type="checkbox" name="cat-sweet" id="sweet" value="Сахарозаменитель" checked>
+                <li class="extra__item extra__item--sweet">
+                  <input class="extra__sweet" type="checkbox" name="cat-sweet" id="sweet" value="Сахарозаменитель" checked>
                   <label for="sweet">Сахарозаменитель</label>
                 </li>
-                <li class="extra__item">
+                <li class="extra__item extra__item--water">
                   <input class="extra__water" type="checkbox" name="cat-water" id="water" value="Питьевая вода">
                   <label for="water">Питьевая вода</label>
                 </li>
-                <li class="extra__item">
+                <li class="extra__item extra__item--milk">
                   <input class="extra__milk" type="checkbox" name="cat-milk" id="milk" value="Молоко">
                   <label for="milk">Молоко</label>
                 </li>
-                <li class="extra__item">
+                <li class="extra__item extra__item--vitamins">
                     <input class="extra__vitamins" type="checkbox" name="cat-vitamins" id="vitamins" value="Витамины">
                     <label for="vitamins">Витамины</label>
                 </li>
@@ -121,10 +121,10 @@
           <section class="personal-data__bottom bottom">
             <h2 class="visually-hidden">Отправка завки</h2>
               <ul class="bottom__list">
-                <li class="bottom__item">
-                  <button class="bottom__button" type="submit">Отправить заявку</button>
+                <li class="bottom__item bottom__item--button">
+                  <button class="bottom__toggle" type="submit">Отправить заявку</button>
                 </li>
-                <li class="bottom__item">
+                <li class="bottom__item bottom__item--info">
                   <small class="bottom__required"><sup>*</sup> — Обязательные поля</small>
                 </li>
       </form>
